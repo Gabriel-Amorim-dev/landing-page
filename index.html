@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/cardapio.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/avaliações.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav id = "navbar">
+            <i class="fa-solid fa-bowl-food" id = "logo-nav">NOUN</i>
+            <div id = "menu-link">
+            <ul id = "nav-list" class = "nav-list"> 
+                <li class = "nav-item active" ><a href = #home>Início</a></li>
+                <li class = "nav-item" ><a href = #cardapio>Cardápio</a></li>
+                <li class = "nav-item" ><a href = #avaliacoes>Avaliações</a></li>
+            </ul>
+            </div>
+            <button class = "botao-padrao">
+                peça aqui
+            </button>
+            <button id = "mobile-bttn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id = "mobile-cardapio">
+            <ul id = "mobile_nav-list">
+                <li class = "nav-item" id = ""><a href = #home>Início</a></li>
+                <li class = "nav-item" id = ""><a href = #cardapio>Cardápio</a></li>
+                <li class = "nav-item" id = ""><a href = #avaliacoes>Avaliações</a></li>
+            </ul>
+            <button class = "botao-padrao">
+                peça aqui
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id = "home">
+            <div class = "shape"></div>
+            <div id="cta">
+                <h1 class = "title">O sabor que vai atê
+                <span>você</span>
+                </h1>
+                <p class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptatib
+                </p>
+                <div id = "cta-bttns">
+                    <a href="#" class="botao-padrao">Ver cardapio</a>
+                    <a href="tel: +5583988902151" id = "phone-bttn">
+                        <button class = "botao-padrao">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (83) 98890-2151
+                    </a>
+                </div>
+                <div class = "social-media-bttn">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        
+            <div id ="banner">
+                <div class = "shape"></div>
+                <img src="imgs/comida1.png" class="banner-img img1">
+                <img src="imgs/food2.png" class="banner-img img2">
+            </div>
+        </section>
+        <section id = "cardapio">
+        <h2 class = "section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nosso pratos especiais</h3>
+        <div id = "dishes" class = "pratos">
+            <div class = "prato">
+                <div class="pratos-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imgs/comida5.png" class="prato-heart">
+                <h3 class = "prato-titulo">
+                    Lorem impsum
+                </h3>
+                <span class="prato-descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </span>
+                <div class = "prato-av">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <div class="prato-preco">
+                   <h4> R$ 40,00 </h4>
+                   <button class = "botao-padrao">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                   </button>
+                </div>
+            </div>
+            <div class = "prato">
+                <div class="pratos-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imgs/comida4.png" class="prato-heart">
+                <h3 class = "prato-titulo">
+                    Lorem impsum
+                </h3>
+                <span class="prato-descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </span>
+                <div class = "prato-av">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <div class="prato-preco">
+                   <h4> R$ 49,90 </h4>
+                   <button class = "botao-padrao">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                   </button>
+                </div>
+            </div>
+            <div class = "prato">
+                <div class="pratos-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imgs/comida7.png" class="prato-heart">
+                <h3 class = "prato-titulo">
+                    Lorem impsum
+                </h3>
+                <span class="prato-descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </span>
+                <div class = "prato-av">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <div class="prato-preco">
+                   <h4> R$ 49,90 </h4>
+                   <button class = "botao-padrao">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                   </button>
+                </div>
+            </div>
+            <div class = "prato">
+                <div class="pratos-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="imgs/comida3.png" class="prato-heart">
+                <h3 class = "prato-titulo">
+                    Lorem impsum
+                </h3>
+                <span class="prato-descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </span>
+                <div class = "prato-av">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                </div>
+                <div class="prato-preco">
+                   <h4> R$ 32,90 </h4>
+                   <button class = "botao-padrao">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                   </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "avaliacoes">
+        <div class="avaliacao-container">
+            <div class = "shape1"></div>
+            <img src="imgs/cliente2.png" alt="" class="av-cliente">
+            <div id="feedbacks">
+                <h2 class = "section-title">Avaliações
+
+                </h2>
+                
+                <h3 class="section-subtitle">
+                    Com inúmeras aprovações de vários clientes
+                </h3>
+                <div class="feedback">
+                    <img src="imgs/user1.png" alt="" class = "feedback-avatar">
+                    <div class="av-content">
+                        <p>
+                            Fulana The Towwn
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio non vitae aliquam suscipit enim quae optio, nam atque tenetur ipsam, et maxime natus asperiores. Veniam delectus recusandae sunt commodi.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="imgs/user2.png" alt="" class = "feedback-avatar">
+                    <div class="av-content">
+                        <p>
+                            Dona Zuzu
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio non vitae aliquam suscipit enim quae optio, nam atque tenetur ipsam, et maxime natus asperiores. Veniam delectus recusandae sunt commodi.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="imgs/user3.png" alt="" class = "feedback-avatar">
+                    <div class="av-content">
+                        <p>
+                            Paola Casorella
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio non vitae aliquam suscipit enim quae optio, nam atque tenetur ipsam, et maxime natus asperiores. Veniam delectus recusandae sunt commodi.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="imgs/user4.png" alt="" class = "feedback-avatar">
+                    <div class="av-content">
+                        <p>
+                            João Marquis
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio non vitae aliquam suscipit enim quae optio, nam atque tenetur ipsam, et maxime natus asperiores. Veniam delectus recusandae sunt commodi.
+                        </p>
+                    </div>
+                </div>
+                <button class = "botao-padrao">Mais Avaliações</button>
+            </div>
+        </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
