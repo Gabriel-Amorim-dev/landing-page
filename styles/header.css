@@ -1,0 +1,76 @@
+header{
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: #fff9ea;
+    z-index: 3;
+}
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ & #logo-nav{
+    font-size: 32px;
+    color: var(--secundaria);
+ }
+ & .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 38px;
+ 
+ & .nav-item a{
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 600;
+ }
+ } 
+}
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid rgb(244, 150, 19);
+}
+#mobile-bttn{
+   display: none;
+}
+#mobile-cardapio{
+   display: none;
+}
+@media screen and (max-width: 1170px) {
+   #menu-link{
+      display: none;
+   }
+   #navbar .botao-padrao{
+      display: none;
+   }
+   #mobile-cardapio {
+      display: none;
+   }
+   #mobile-bttn{
+      display: block;
+      border: none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      cursor: pointer;
+   }
+   #mobile-cardapio.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   #mobile_nav-list{
+      flex-direction: column;
+      gap: 12px;
+      margin: 12px 0px;
+      & .nav-item{
+         margin: 12px 0px;
+         list-style: none;
+         text-align: center;
+         & a{
+            color: #1d1d1d;
+            text-decoration: none;
+         }
+      }
+   }
+}

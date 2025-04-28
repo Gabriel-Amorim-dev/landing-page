@@ -1,0 +1,121 @@
+#avaliacoes{
+    position: relative;
+    min-height: calc(100vh - 91px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 49px;
+}
+.avaliacao-container {
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+}
+#feedbacks {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    & h2{
+        font-size: 4rem;
+    }
+    & h3{
+        font-size: 3rem;
+    }
+}
+.feedback{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 22px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.feedback:hover{
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.1);;
+    transform: scale(1.05);
+}
+.av-cliente{
+    position: relative;
+    z-index: 1;
+    right: 5%;
+    top: 0%;
+    
+}
+
+.shape1{
+    position: absolute;
+    width: 450px; 
+    height: 400px; 
+    top: 39.75%;
+    right: 1%;
+    transform: translateY(); 
+    right: 1050px;
+    z-index: 0;
+    border-radius: 50% 50% 20% 20%;
+    background-color: var(--secundaria);
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.1);;
+}
+.feedback-avatar {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 60px;
+}
+.av-content{
+    width: 90%;
+}
+
+.av-content p{
+    display: flex;
+    justify-content: space-between;
+}
+.av-content span{
+    color: #e9a209;
+    padding: 0px 30px;
+}
+@media screen and (max-width: 1170px) {
+    #avaliacoes{
+        flex-direction: column;
+    }
+    #feedbacks .section-title{
+        text-align: center;
+        font-size: 3.2rem;
+    }
+    #feedbacks .section-subtitle{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .av-cliente {
+        display: none;
+    }
+    .shape1{
+        display: none;
+    }
+    .av-content{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        
+        
+
+    }
+}
+@media screen and (max-width: 600px) {
+    .feedback{
+        flex-direction: column;
+    }
+    #feedbacks .section-title{
+        text-align: center;
+        font-size: 2.7rem;
+    }
+    #feedbacks .section-subtitle{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
