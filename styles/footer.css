@@ -1,0 +1,35 @@
+footer{
+    background-color: hsl(300, 55%, 96%);
+}
+#footer-itens{
+    background: radial-gradient(ellipse at top,var(--primaria), transparent),
+        radial-gradient(ellipse at bottom, #f4f774, transparent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px 24px 8%;
+}
+
+#copyright{
+    color: #474a4d;
+    font-weight: 500;
+}
+@media screen and (max-width: 1170px) {
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+    }
+    #copyright{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
